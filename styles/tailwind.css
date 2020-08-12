@@ -1,0 +1,21 @@
+@tailwind base;
+
+@tailwind components;
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+.task.completed {
+    @apply bg-indigo-500 text-black;
+}
+.task {
+    @apply bg-gray-900 w-full text-white p-2 shadow-md rounded-full text-center text-opacity-75 cursor-pointer transition-colors duration-300 mt-2;
+}
+
+@tailwind utilities;
